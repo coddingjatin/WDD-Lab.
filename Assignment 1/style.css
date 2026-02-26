@@ -1,0 +1,261 @@
+/* ================= GLOBAL ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f8fafc;
+  color: #1f2937;
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
+
+/* ================= DARK NAVBAR ================= */
+header {
+  background: #0f172a;
+}
+
+nav {
+  max-width: 1100px;
+  margin: auto;
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+nav h2 {
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+/* Menu */
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+/* Links */
+nav ul li a {
+  margin-left: 26px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.95rem;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+/* Underline effect */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #60a5fa;
+  transition: width 0.3s ease;
+}
+
+/* Hover */
+nav ul li a:hover {
+  color: #60a5fa;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Active link (optional) */
+nav ul li a.active {
+  color: #60a5fa;
+}
+
+nav ul li a.active::after {
+  width: 100%;
+}
+
+/* ================= HERO ================= */
+.hero {
+  max-width: 900px;
+  margin: 90px auto 110px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero img {
+  width: 135px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.hero span {
+  color: #3b82f6;
+}
+
+.hero p {
+  margin-top: 12px;
+  font-size: 1.05rem;
+  color: #475569;
+}
+
+/* ================= SECTION BASE ================= */
+.section {
+  padding: 90px 20px;
+}
+
+.section-inner {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* alternate background */
+.section.alt {
+  background: #eef2ff;
+}
+
+/* ================= SECTION TITLE ================= */
+.section h2 {
+  font-size: 1.9rem;
+  margin-bottom: 18px;
+}
+
+/* ================= DIVIDER (RULER) ================= */
+.divider {
+  width: 60px;
+  height: 4px;
+  background: #c7d2fe;
+  margin-bottom: 35px;
+  border-radius: 5px;
+}
+
+/* ================= SKILLS ================= */
+.skills {
+  max-width: 520px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill span {
+  font-size: 0.9rem;
+}
+
+.progress {
+  height: 7px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  margin-top: 6px;
+}
+
+.progress div {
+  height: 100%;
+  background: #3b82f6;
+  animation: grow 1.4s ease;
+}
+
+@keyframes grow {
+  from { width: 0; }
+}
+
+/* ================= PROJECTS ================= */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+/* ================= CONTACT ================= */
+form {
+  max-width: 420px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 0.9rem;
+}
+
+button {
+  padding: 13px;
+  background: #3b82f6;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 35px;
+  color: #64748b;
+  font-size: 0.9rem;
+  background: #f8fafc;
+}
+
+footer a {
+  color: #3b82f6;
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  nav ul li a {
+    margin-left: 18px;
+  }
+}

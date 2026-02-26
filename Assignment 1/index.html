@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header>
+    <nav>
+      <h2>Jatin's Portfolio</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= HERO / HOME ================= -->
+  <section id="home" class="hero">
+    <img src="profile.jp.jfif" alt="Profile Photo">
+    <h1>Hello, I'm <span>Jatin Vishwakarma</span></h1>
+    <p>A passionate Web Developer & Computer Science Student</p>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section alt">
+    <div class="section-inner">
+      <h2>About Me</h2>
+      <div class="divider"></div>
+
+      <p>
+        I am a second-year Computer Science and Engineering student who enjoys
+        building simple, meaningful, and user-friendly web applications.
+        I love learning new technologies and improving my problem-solving skills.
+      </p>
+
+      <h3>Education</h3>
+      <p>Walchand College of Engineering, Sangli</p>
+
+      <h3>Skills</h3>
+      <div class="skills">
+        <div class="skill">
+          <span>HTML</span>
+          <div class="progress"><div style="width:90%"></div></div>
+        </div>
+
+        <div class="skill">
+          <span>CSS</span>
+          <div class="progress"><div style="width:80%"></div></div>
+        </div>
+
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="progress"><div style="width:70%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <h2>Projects</h2>
+      <div class="divider"></div>
+
+      <div class="project-container">
+
+        <div class="project-card">
+          <h3>Personal Portfolio</h3>
+          <p>
+            A responsive personal portfolio website showcasing my profile,
+            skills, and projects.
+          </p>
+          <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+          <a href="#" target="_blank">GitHub Repository</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Student Management System</h3>
+          <p>
+            A basic web application to manage student records with CRUD operations.
+          </p>
+          <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+          <a href="#" target="_blank">GitHub Repository</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Weather Application</h3>
+          <p>
+            A weather app that shows real-time weather data using a public API.
+          </p>
+          <p><strong>Tech Stack:</strong> JavaScript, API</p>
+          <a href="#" target="_blank">Live Demo</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section alt">
+    <div class="section-inner">
+      <h2>Contact Me</h2>
+      <div class="divider"></div>
+
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <input type="text" id="subject" placeholder="Subject">
+        <textarea id="message" rows="4" placeholder="Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2025 Jatin Vishwakarma. All rights reserved.</p>
+    <div class="socials">
+      <a href="#">LinkedIn</a> |
+      <a href="#">GitHub</a> |
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
